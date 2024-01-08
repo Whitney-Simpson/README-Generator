@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+const renderLicenseLink = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 
 const fs = require('fs').promises;
@@ -72,7 +73,6 @@ const questions = () => {
          choices: [
             'None',
             'Apache License 2.0',
-            'GNU General Public License',
             'MIT License',
             'BSD 2-Clause "Simplified" License',
             'BSD 3-Clause "New" or "Revised" License',
@@ -80,8 +80,6 @@ const questions = () => {
             'Creative Commons Zero v1.0',
             'Eclipse Public License 2.0',
             'GNU Affero General Public License v3.0',
-            'GNU General Public License v2.0',
-            'GNU Lesser General Public License v2.1',
             'Mozilla Public License 2.0',
             'The Unlicense'
          ]
@@ -177,10 +175,8 @@ ${email}
 
 
 ## License
-${license}
+${renderLicenseLink(license)}
 
-
-## Badges
 
 ## Tests
 ${tests}
@@ -189,7 +185,7 @@ ${tests}
 // function init() {}
 const init =() => {
     questions()
-    .then((answers) => fs.writeFile('READMECREATED.md', generateMarkdown(answers)))
+    .then((answers) => fs.writeFile('./generatedREADME/README.md', generateMarkdown(answers)))
     .then(() => console.log('Successfully created README file'))
     .catch((err) => console.error(err));
 };
