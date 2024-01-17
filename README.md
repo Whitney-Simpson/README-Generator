@@ -29,10 +29,10 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding sectin of the README
 ```
 ## GitHUb Location
-
+https://github.com/Whitney-Simpson/README-Generator.git
 
 ## Recording Location
-
+<iframe src="https://drive.google.com/file/d/1QAdM9wK9imSPtA6J6ZZDfZPFI6qGEc19/preview" width="640" height="480"></iframe>
 ## Example README Location
 
 

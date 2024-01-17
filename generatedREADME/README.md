@@ -14,7 +14,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [License](#license)
 
 ## Installation
-Yes, you must first run npm i to install packages, then run node index.js to prompt questions need to create README file.
+YES you must first run "npm i" to install packages, then run "node index.js to prompt questions needed to reate README file
 
 
 
@@ -36,4 +36,4 @@ whitmoon4819@gmail.com
 
 
 ## Tests
-None
+No
